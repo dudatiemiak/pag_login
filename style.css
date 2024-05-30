@@ -22,15 +22,31 @@ body{
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+.cadastro-page{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 12px;
+    padding: 10px 20px;
+    background: transparent;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
 .wrapper h2{
     font-size: 30px;
     color: #fffefe;
 }
 
+.cadastro-page h2{
+    font-size: 30px;
+    color: #fffefe;
+}
 .input-area{
     position: relative;
 }
 
+.input-area input[type="name"],
 .input-area input[type="email"],
 .input-area input[type="password"]{
     margin: 0 autoZ;
@@ -55,6 +71,7 @@ input::placeholder{
     color: rgb(255, 255, 255);
 }
 
+.input-area input[type="name"]:focus::placeholder,
 .input-area input[type="email"]:focus::placeholder,
 .input-area input[type="password"]:focus::placeholder{
     transform: translateY(-100%);
@@ -62,6 +79,7 @@ input::placeholder{
     font-size: 14px;
 }
 
+.input-area input[type="name"]:not(:focus)::placeholder,
 .input-area input[type="email"]:not(:focus)::placeholder,
 .input-area input[type="password"]:not(:focus)::placeholder{
     transform: translateY(0%);
@@ -91,6 +109,17 @@ a.cadastro:hover{
 }
 
 .wrapper .login{
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 45px;
+    width: 200px;
+    height: 30px;
+}
+
+.cadastro-page .cadastro{
     background: #fff;
     border: none;
     outline: none;
