@@ -3,15 +3,15 @@ body{
     background-position: center;
     background-size: cover;
     background-color: #3f8dc0;
-    width: 400px;
-    height: 600px;
+    width: 100vw; 
+    height: 100vh; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 
 .wrapper{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 350px;
     height: 350px;
     text-align: center;
@@ -33,6 +33,7 @@ body{
 
 .input-area input[type="email"],
 .input-area input[type="password"]{
+    margin: 0 autoZ;
     border-radius: 10px;
     background: transparent;
     margin: 15px;
